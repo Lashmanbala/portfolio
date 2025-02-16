@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Big Data Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+        header { background: #222; color: #fff; text-align: center; padding: 2em 0; }
+        nav { background: #333; display: flex; justify-content: center; }
+        nav a { color: #fff; text-decoration: none; padding: 1em; }
+        nav a:hover { background: #555; }
+        section { padding: 2em; max-width: 900px; margin: 0 auto; }
+        .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; }
+        .project-card { border: 1px solid #ccc; border-radius: 8px; padding: 1em; }
+        .project-card h3 { margin: 0 0 0.5em; }
+        footer { text-align: center; background: #222; color: #fff; padding: 1em 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lashmanbala</h1>
+        <p>AWS Data Engineer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>🚀 AWS Data Engineer</p>
+        <p>I’m a passionate Big Data Engineer with hands-on experience designing and building scalable data pipelines, real-time streaming applications, and cloud-native solutions. I thrive on transforming raw data into meaningful insights to drive business decisions.</p>
+
+        <p>🔍 Key Expertise:</p>
+        <ul>
+            <li>Languages: Python, SQL</li>
+            <li>Database: MySQL, PostgreSQL</li>
+            <li>Data Processing: Apache Spark</li>
+            <li>Data Lake: HDFS, S3</li>
+            <li>Lakehouse: Delta</li>
+            <li>Data Warehouse: AWS Redshift, Apache Hive, Databricks</li>
+            <li>ETL tool: AWS Glue</li>
+            <li>Streaming: Apache Kafka, Spark Streaming, AWS Kinesis</li>
+            <li>NoSQL: MongoDB, DynamoDB</li>
+            <li>Orchestration: Apache Airflow</li>
+            <li>Containerisation: Docker</li>
+            <li>Build Tool: dbt</li>
+        </ul>
+
+        <p>💡 What I’ve Built:</p>
+        <ul>
+            <li>Orchestrated AWS-based data pipelines for GitHub activity analysis</li>
+            <li>Developed a Kafka-Spark pipeline to identify cashback-eligible users in real-time</li>
+            <li>Created an Airflow pipeline for dbt models with Delta Lake storage in Databricks</li>
+            <li>Engineered an ETL pipeline for streaming logs using Kinesis</li>
+            <li>Designed Redshift Data Warehouse Solution for Retail Data Analytics</li>
+        </ul>
+
+        <p>⚙️ How I Work:</p>
+        <p>I believe in writing clean, maintainable code and leveraging automation to optimize workflows. My recent projects involved parameterized dbt models, incremental table loading, and continuous data ingestion for daily revenue reporting.</p>
+
+        <p>🌱 What Drives Me:</p>
+        <p>I’m excited about tackling new challenges, exploring cutting-edge big data technologies, and helping businesses unlock the power of their data.</p>
+
+        <p>Let’s connect and collaborate on innovative data solutions! 🚀</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Github User Activity Pipeline Using AWS Lambda, EMR</h3>
+                <p>Developed an automated AWS data pipeline to ingest hourly GitHub activity data from GH Archive into S3 using Lambda and EventBridge. Processed data with Spark on EMR, storing it as partitioned Parquet files. Built a custom Python script for deployment and orchestration.</p>
+                <a href="https://github.com/Lashmanbala/aws_lambda_emr_pipeline" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Redshift DataWarehouse Solution for Retail Data Analytics</h3>
+                <p>Designed a Redshift data warehouse integrating data from S3, RDS MySQL, and Redshift tables. Utilized Redshift Spectrum for large datasets and Glue for metadata management. Automated infrastructure setup and validated with complex join queries.</p>
+                <a href="https://github.com/Lashmanbala/aws_redshift" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Revenue Reporting Pipeline on Databricks by DBT and Airflow</h3>
+                <p>Developed a revenue reporting pipeline with dbt and Airflow in Databricks. Implemented data quality checks, modularized transformations, and incremental updates for daily revenue computations.</p>
+                <a href="https://github.com/Lashmanbala/dbt_databricks" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Cashback Streaming Project Using Kafka and Spark streaming</h3>
+                <p>Built a real-time cashback streaming pipeline using Kafka and Spark Structured Streaming. Configured with Docker, sent eligible cashback details to PostgreSQL, and implemented fault tolerance with Parquet backups.</p>
+                <a href="https://github.com/Lashmanbala/kafka_spark_streaming" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Logs Streaming Using AWS Kinesis</h3>
+                <p>Developed a real-time log streaming solution using Amazon Kinesis Data Streams and Firehose. Simulated log generation in a Dockerized environment with a scalable architecture for efficient processing.</p>
+                <a href="https://github.com/Lashmanbala/logs_streaming_using_kinesis" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Github Data ETL Pipeline Using AWS Glue</h3>
+                <p>Built a serverless data pipeline using AWS Glue to process GitHub activity data. Cleaned, partitioned, and stored data as Parquet files with efficient analysis using Athena.</p>
+                <a href="https://github.com/Lashmanbala/aws_glue_etl" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Data Migration Project</h3>
+                <p>Implemented a data migration from MySQL to PostgreSQL using a Python application in Docker. Orchestrated with Airflow for seamless, automated migrations.</p>
+                <a href="https://github.com/Lashmanbala/data_migration_project" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>NYSE Data ETL Pipeline Using Hive</h3>
+                <p>Developed an ETL pipeline for NYSE financial data using Hive and HDFS. Automated ingestion and transformation with scheduled execution on AWS EMR.</p>
+                <a href="https://github.com/Lashmanbala/hive_etl" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:lashmanbala@gmail.com">lashmanbala@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lashmanbala" target="_blank">https://www.linkedin.com/in/lashmanbala</a></p>
+        <p>GitHub: <a href="https://github.com/Lashmanbala" target="_blank">https://github.com/Lashmanbala</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Big Data Engineer Portfolio
+    </footer>
+</body>
+</html>
