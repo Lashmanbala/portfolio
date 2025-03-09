@@ -6,35 +6,103 @@
     <title>Lashmanbala | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; }
-        header { 
-            background: linear-gradient(135deg, #6e45e2, #88d3ce);
-            color: #fff;
-            text-align: center;
-            padding: 4em 1em;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            font-size: 1.5em;
-            position: relative;
-        }
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: #fff;
-            border-radius: 2px;
-        }
-        nav { background: linear-gradient(135deg, #88d3ce, #6e45e2); display: flex; justify-content: center; }
-        nav a { color: #fff; text-decoration: none; padding: 1em; }
-        nav a:hover { background: #555; }
-        section { padding: 2em; max-width: 900px; margin: 0 auto; }
-        .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; }
-        .project-card { border: 1px solid #ccc; border-radius: 8px; padding: 1em; }
-        .project-card h3 { margin: 0 0 0.5em; }
-        footer { text-align: center; background: #222; color: #fff; padding: 1em 0; }
+            body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+    
+            header { 
+                background: linear-gradient(135deg, #6e45e2, #88d3ce);
+                color: #fff;
+                text-align: center;
+                padding: 0.1em 1em;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                font-size: 1.5em;
+                position: relative;
+            }
+            
+            header::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 4px;
+                background: #fff;
+                border-radius: 2px;
+            }
+
+            nav { 
+                background: linear-gradient(135deg, #88d3ce, #6e45e2); 
+                display: flex; 
+                justify-content: center; 
+            }
+            
+            nav a { 
+                color: #fff; 
+                text-decoration: none; 
+                padding: 1em; 
+            }
+            
+            nav a:hover { 
+                background: #555; 
+            }
+            
+            section { 
+                padding: 2em; 
+                max-width: 900px; 
+                margin: 0 auto; 
+            }
+
+            .projects { 
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                gap: 1em; 
+            }
+            
+            .project-card { 
+                border: 1px solid #ccc; 
+                border-radius: 8px; 
+                padding: 1em; 
+            }
+            
+            .project-card h3 { 
+                margin: 0 0 0.5em; 
+            }
+            
+            footer { 
+                text-align: center; 
+                background: #222; 
+                color: #fff; 
+                padding: 1em 0; 
+            }
+
+            /* Contact Section Styling */
+            .contact-container {
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .contact-tile {
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 8px;
+                font-weight: bold;
+                transition: background 0.3s;
+                text-align: center;
+                min-width: 120px;
+            }
+
+            .contact-tile:nth-child(1) { background-color: #111111; }
+            .contact-tile:nth-child(2) { background-color: #101111; } 
+            .contact-tile:nth-child(3) { background-color: #101111; } 
+
+            .contact-tile:hover {
+                opacity: 0.8;
+            }
+
     </style>
 </head>
 <body>
@@ -51,41 +119,21 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>🚀 AWS Data Engineer</p>
-        <p>I’m a passionate Big Data Engineer with hands-on experience designing and building scalable data pipelines, real-time streaming applications, and cloud-native solutions. I thrive on transforming raw data into meaningful insights to drive business decisions.</p>
-
         <p>🔍 Key Expertise:</p>
         <ul>
-            <li>Languages: Python, SQL</li>
-            <li>Database: MySQL, PostgreSQL</li>
-            <li>Data Processing: Apache Spark</li>
-            <li>Data Lake: HDFS, S3</li>
-            <li>Lakehouse: Delta</li>
-            <li>Data Warehouse: AWS Redshift, Apache Hive, Databricks</li>
-            <li>ETL tool: AWS Glue</li>
-            <li>Streaming: Apache Kafka, Spark Streaming, AWS Kinesis</li>
-            <li>NoSQL: MongoDB, DynamoDB</li>
-            <li>Orchestration: Apache Airflow</li>
-            <li>Containerisation: Docker</li>
-            <li>Build Tool: dbt</li>
+            <li><strong>Languages</strong>: Python, SQL</li>
+            <li><strong>Database</strong>: MySQL</li>
+            <li><strong>Data Processing</strong>: Apache Spark</li>
+            <li><strong>Data Lake</strong>: HDFS, S3</li>
+            <li><strong>Lakehouse</strong>: Delta</li>
+            <li><strong>Data Warehouse</strong>: AWS Redshift, Apache Hive, Databricks</li>
+            <li><strong>ETL tool</strong>: AWS Glue</li>
+            <li><strong>Streaming</strong>: Apache Kafka, Spark Streaming, AWS Kinesis</li>
+            <li><strong>NoSQL</strong>: MongoDB, DynamoDB</li>
+            <li><strong>Orchestration</strong>: Apache Airflow</li>
+            <li><strong>Containerisation</strong>: Docker</li>
+            <li><strong>Build Tool</strong>: dbt</li>
         </ul>
-
-        <p>💡 What I’ve Built:</p>
-        <ul>
-            <li>Orchestrated AWS-based data pipelines for GitHub activity analysis</li>
-            <li>Developed a Kafka-Spark pipeline to identify cashback-eligible users in real-time</li>
-            <li>Created an Airflow pipeline for dbt models with Delta Lake storage in Databricks</li>
-            <li>Engineered an ETL pipeline for streaming logs using Kinesis</li>
-            <li>Designed Redshift Data Warehouse Solution for Retail Data Analytics</li>
-        </ul>
-
-        <p>⚙️ How I Work:</p>
-        <p>I believe in writing clean, maintainable code and leveraging automation to optimize workflows. My recent projects involved parameterized dbt models, incremental table loading, and continuous data ingestion for daily revenue reporting.</p>
-
-        <p>🌱 What Drives Me:</p>
-        <p>I’m excited about tackling new challenges, exploring cutting-edge big data technologies, and helping businesses unlock the power of their data.</p>
-
-        <p>Let’s connect and collaborate on innovative data solutions! 🚀</p>
     </section>
 
     <section id="projects">
@@ -136,9 +184,11 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:lashmanbala@gmail.com">lashmanbala@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lashmanbala" target="_blank">https://www.linkedin.com/in/lashmanbala</a></p>
-        <p>GitHub: <a href="https://github.com/Lashmanbala" target="_blank">https://github.com/Lashmanbala</a></p>
+        <div class="contact-container">
+            <a href="mailto:lashmanbala@gmail.com" class="contact-tile">Email</a>
+            <a href="https://www.linkedin.com/in/lashmanbala" target="_blank" class="contact-tile">LinkedIn</a>
+            <a href="https://github.com/Lashmanbala" target="_blank" class="contact-tile">GitHub</a>
+        </div>
     </section>
 
     <footer>
