@@ -75,7 +75,6 @@
                 padding: 1em 0; 
             }
 
-            /* Contact Section Styling */
             .contact-container {
                 display: flex;
                 gap: 15px;
@@ -86,7 +85,7 @@
 
             .contact-tile {
                 text-decoration: none;
-                color: white;
+                color: rgba(238, 232, 233, 0.973);
                 padding: 10px 20px;
                 border-radius: 8px;
                 font-weight: bold;
@@ -95,14 +94,36 @@
                 min-width: 120px;
             }
 
-            .contact-tile:nth-child(1) { background-color: #111111; }
-            .contact-tile:nth-child(2) { background-color: #101111; } 
-            .contact-tile:nth-child(3) { background-color: #101111; } 
+            .contact-tile:nth-child(1) { background: linear-gradient(135deg, #04887f, #4407ec); }
+            .contact-tile:nth-child(2) { background: linear-gradient(135deg, #04887f, #4204eb); } 
+            .contact-tile:nth-child(3) { background: linear-gradient(135deg, #04887f, #4302f5); } 
 
             .contact-tile:hover {
                 opacity: 0.8;
             }
-
+            .expertise-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+        }
+    
+        .expertise-list li {
+            display: flex;
+            justify-content: left;
+            gap: 8px;
+            font-size: 1.1em;
+        }
+    
+        .label {
+            font-weight: bold;
+            min-width: 180px; /* Ensures alignment */
+            display: inline-block;
+        }
+    
+        .colon {
+            font-weight: bold;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -119,20 +140,20 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>🔍 Key Expertise:</p>
-        <ul>
-            <li><strong>Languages</strong>: Python, SQL</li>
-            <li><strong>Database</strong>: MySQL</li>
-            <li><strong>Data Processing</strong>: Apache Spark</li>
-            <li><strong>Data Lake</strong>: HDFS, S3</li>
-            <li><strong>Lakehouse</strong>: Delta</li>
-            <li><strong>Data Warehouse</strong>: AWS Redshift, Apache Hive, Databricks</li>
-            <li><strong>ETL tool</strong>: AWS Glue</li>
-            <li><strong>Streaming</strong>: Apache Kafka, Spark Streaming, AWS Kinesis</li>
-            <li><strong>NoSQL</strong>: MongoDB, DynamoDB</li>
-            <li><strong>Orchestration</strong>: Apache Airflow</li>
-            <li><strong>Containerisation</strong>: Docker</li>
-            <li><strong>Build Tool</strong>: dbt</li>
+        <h3> Key Expertise:</h3>
+        <ul class="expertise-list">
+            <li><span class="label">Languages</span><span class="colon">:</span> Python, SQL</li>
+            <li><span class="label">Database</span><span class="colon">:</span> MySQL</li>
+            <li><span class="label">Data Processing</span><span class="colon">:</span> Apache Spark</li>
+            <li><span class="label">Data Lake</span><span class="colon">:</span> HDFS, S3</li>
+            <li><span class="label">Lakehouse</span><span class="colon">:</span> Delta</li>
+            <li><span class="label">Data Warehouse</span><span class="colon">:</span> AWS Redshift, Apache Hive, Databricks</li>
+            <li><span class="label">ETL Tool</span><span class="colon">:</span> AWS Glue</li>
+            <li><span class="label">Streaming</span><span class="colon">:</span> Apache Kafka, Spark Streaming, AWS Kinesis</li>
+            <li><span class="label">NoSQL</span><span class="colon">:</span> MongoDB, DynamoDB</li>
+            <li><span class="label">Orchestration</span><span class="colon">:</span> Apache Airflow</li>
+            <li><span class="label">Containerisation</span><span class="colon">:</span> Docker</li>
+            <li><span class="label">Build Tool</span><span class="colon">:</span> dbt</li>
         </ul>
     </section>
 
