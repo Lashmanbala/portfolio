@@ -9,46 +9,15 @@
             body { margin: 0; font-family: 'Segoe UI', sans-serif; }
     
             header { 
-                background: linear-gradient(135deg, #6e45e2, #88d3ce);
-                color: #fff;
-                text-align: center; /* Keeps title centered */
-                padding: 0.5em 1em;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                font-size: 1.5em;
-                position: relative;
-            }
+                 background: linear-gradient(135deg, #6e45e2, #88d3ce);
+                 color: #fff;
+                 text-align: center;
+                 padding: 0.1em 1em;
+                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                 font-size: 1.5em;
+                 position: relative;
+             }
 
-            .header {
-                display: flex;
-                position: relative; /* Allows absolute positioning of the image */
-            }
-
-            .profile-photo {
-                width: 150px;  /* Increased size */
-                height: 150px; /* Keep it square */
-                border-radius: 50%; /* Makes it circular */
-                object-fit: cover; /* Ensures the image is cropped properly */
-                
-                position: absolute;
-                left: 50px; /* Moved slightly to the right */
-                top: 50%;
-                /* transform: translateY(-50%); Centers it vertically */
-            }
-            @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-            }
-
-            .profile-photo {
-                width: 100px;
-                height: 100px;
-            }
-        }
-            .title {
-                margin: 0;
-            }
-
-            
             header::after {
                 content: '';
                 position: absolute;
@@ -186,7 +155,7 @@
 </head>
 <body>
     <header>
-        <img src="Profile Photo.png" alt="Lashmanbala" class="profile-photo">
+        <!-- <img src="Profile Photo.png" alt="Lashmanbala" class="profile-photo"> -->
         <h1>Lashmanbala</h1>
         <p>AWS Data Engineer</p>
     </header>
