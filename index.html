@@ -34,7 +34,16 @@
                 top: 50%;
                 /* transform: translateY(-50%); Centers it vertically */
             }
+            @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
 
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+        }
             .title {
                 margin: 0;
             }
