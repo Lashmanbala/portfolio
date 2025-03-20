@@ -51,6 +51,33 @@
                 max-width: 900px; 
                 margin: 0 auto; 
             }
+            .about-container {
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .expertise, .certifications {
+                flex: 1;
+                min-width: 300px;
+            }
+
+            .certifications-list {
+                list-style: none;
+                padding: 0;
+                font-size: 1.1em;
+            }
+
+            .certifications-list li {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+            }
+
+            .certifications h3 {
+                margin-bottom: 10px;
+            }
 
             .projects { 
                 display: grid; 
@@ -116,7 +143,7 @@
     
         .label {
             font-weight: bold;
-            min-width: 180px; /* Ensures alignment */
+            min-width: 180px; 
             display: inline-block;
         }
     
@@ -140,22 +167,49 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <h3> Key Expertise:</h3>
-        <ul class="expertise-list">
-            <li><span class="label">Languages</span><span class="colon">:</span> Python, SQL</li>
-            <li><span class="label">Database</span><span class="colon">:</span> MySQL</li>
-            <li><span class="label">Data Processing</span><span class="colon">:</span> Apache Spark</li>
-            <li><span class="label">Data Lake</span><span class="colon">:</span> HDFS, S3</li>
-            <li><span class="label">Lakehouse</span><span class="colon">:</span> Delta</li>
-            <li><span class="label">Data Warehouse</span><span class="colon">:</span> AWS Redshift, Apache Hive, Databricks</li>
-            <li><span class="label">ETL Tool</span><span class="colon">:</span> AWS Glue</li>
-            <li><span class="label">Streaming</span><span class="colon">:</span> Apache Kafka, Spark Streaming, AWS Kinesis</li>
-            <li><span class="label">NoSQL</span><span class="colon">:</span> MongoDB, DynamoDB</li>
-            <li><span class="label">Orchestration</span><span class="colon">:</span> Apache Airflow</li>
-            <li><span class="label">Containerisation</span><span class="colon">:</span> Docker</li>
-            <li><span class="label">Build Tool</span><span class="colon">:</span> dbt</li>
-        </ul>
+        <div class="about-container">
+            <div class="expertise">
+                <h3>Key Expertise:</h3>
+                <ul class="expertise-list">
+                    <li><span class="label">Languages</span><span class="colon">:</span> Python, SQL</li>
+                    <li><span class="label">Database</span><span class="colon">:</span> MySQL</li>
+                    <li><span class="label">Data Processing</span><span class="colon">:</span> Apache Spark</li>
+                    <li><span class="label">Data Lake</span><span class="colon">:</span> HDFS, S3</li>
+                    <li><span class="label">Lakehouse</span><span class="colon">:</span> Delta</li>
+                    <li><span class="label">Data Warehouse</span><span class="colon">:</span> AWS Redshift, Databricks</li>
+                    <li><span class="label">Query Tool</span><span class="colon">:</span> Apache Hive, AWS Athena</li>
+                    <li><span class="label">ETL Tool</span><span class="colon">:</span> AWS Glue</li>
+                    <li><span class="label">Streaming</span><span class="colon">:</span> Apache Kafka, Spark Streaming, AWS Kinesis</li>
+                    <li><span class="label">NoSQL</span><span class="colon">:</span> MongoDB, DynamoDB</li>
+                    <li><span class="label">Orchestration</span><span class="colon">:</span> Apache Airflow</li>
+                    <li><span class="label">Containerisation</span><span class="colon">:</span> Docker</li>
+                    <li><span class="label">Build Tool</span><span class="colon">:</span> dbt</li>
+                    <li><span class="label">Containerization </span><span class="colon">:</span> Docker</li>
+                    <li><span class="label">Version Control</span><span class="colon">:</span> Git-Github</li>
+                </ul>
+            </div>
+
+            <div class="certifications">
+                <h3>Certifications:</h3>
+                <ul class="certifications-list">
+                    <li><strong>Python Certification</strong></li>
+                    <a href="https://drive.google.com/file/d/1B-ek4Yd7Cycdhmwe-aiq41BW14Ww1R3W/view?usp=drive_link" target="_blank">Certificate</a>
+                    <li><strong>Linux Fundamentals Certification</strong></li>
+                    <a href="https://drive.google.com/file/d/1J9KsjuOkg2s9VH8JcJnCYvxFG3B_WTG8/view?usp=drive_link" target="_blank">Certificate</a>
+                    <li><strong>AWS Technical Essentials Certification</strong></li>
+                    <a href="https://drive.google.com/file/d/16ku9mKBv2nl0YsySj4lvt_2gQ5ofEeVe/view?usp=sharing" target="_blank">Certificate</a>                      
+                    <li><strong>Data Engineering Essentials Certification</strong></li>
+                    <a href="https://drive.google.com/file/d/1l-JoAgQTGnf2xDI4Be01phJV0DF0ZMzQ/view?usp=drive_link" target="_blank">Certificate</a>
+                    <li><strong>AWS Data Analytics Certification</strong></li>
+                    <a href="https://drive.google.com/file/d/1bKcAlRLnynfGeQPJjS90Sk1jESSRID03/view?usp=drive_link" target="_blank">Certificate</a>
+                    <li><strong>Master Data Engineering Certification</strong></li>
+                    <a href="https://drive.google.com/file/d/1y051w9AZ5bmjeX0cq722oLSIqHbIPvui/view?usp=drive_link" target="_blank">Certificate</a>                        
+                </ul>
+            </div>
+            
+        </div>
     </section>
+
 
     <section id="projects">
         <h2>Projects</h2>
