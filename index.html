@@ -240,42 +240,74 @@
         <div class="projects">
             <div class="project-card">
                 <h3>Github User Activity Pipeline Using AWS Lambda, EMR</h3>
-                <p>Developed an automated AWS data pipeline to ingest hourly GitHub activity data from GH Archive into S3 using Lambda and EventBridge. Processed data with Spark on EMR, storing it as partitioned Parquet files. Built a custom Python script for deployment and orchestration.</p>
-                <a href="https://github.com/Lashmanbala/aws_lambda_emr_pipeline" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Developed an automated AWS data pipeline to ingest hourly GitHub activity data from GH Archive into S3 using Lambda and EventBridge.</li>
+                    <li>Processed and optimized the data with Spark on EMR, storing it as partitioned Parquet files.</li>
+                    <li>Built a custom Python script for end-to-end deployment, including infrastructure provisioning and event-based orchestration.</li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/aws_lambda_emr_pipeline" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Redshift DataWarehouse Solution for Retail Data Analytics</h3>
-                <p>Designed a Redshift data warehouse integrating data from S3, RDS MySQL, and Redshift tables. Utilized Redshift Spectrum for large datasets and Glue for metadata management. Automated infrastructure setup and validated with complex join queries.</p>
-                <a href="https://github.com/Lashmanbala/aws_redshift" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Designed and implemented a Redshift data warehouse solution for retail analytics, integrating data from S3, RDS MySQL, and Redshift-managed tables.</li>
+                    <li>Utilized Redshift Spectrum for large datasets, federated queries for real-time access to RDS data, and Glue for metadata management.</li>
+                    <li>Automated infrastructure setup and validated the solution with complex join queries.</li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/aws_redshift" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Revenue Reporting Pipeline on Databricks by DBT and Airflow</h3>
-                <p>Developed a revenue reporting pipeline with dbt and Airflow in Databricks. Implemented data quality checks, modularized transformations, and incremental updates for daily revenue computations.</p>
-                <a href="https://github.com/Lashmanbala/dbt_databricks" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Developed a revenue reporting pipeline in Databricks using dbt for modularized transformations across bronze, silver, and gold layers.</li>
+                    <li>Implemented data quality checks with custom dbt tests and orchestrated monthly data processing using Airflow.</li>
+                    <li>Optimized the pipeline to compute daily revenue for analyst teams with efficient incremental updates.</li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/dbt_databricks" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Cashback Streaming Project Using Kafka and Spark streaming</h3>
-                <p>Built a real-time cashback streaming pipeline using Kafka and Spark Structured Streaming. Configured with Docker, sent eligible cashback details to PostgreSQL, and implemented fault tolerance with Parquet backups.</p>
-                <a href="https://github.com/Lashmanbala/kafka_spark_streaming" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Built a real-time cashback streaming pipeline using Kafka and Spark Structured Streaming to process financial transactions.</li>
+                    <li>Configured Kafka and Spark in Docker, with eligible cashback details sent to a Kafka topic and PostgreSQL, and malformed records logged for reprocessing.</li>
+                    <li>Implemented fault tolerance by handling database unavailability with Parquet-based data backups. </li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/kafka_spark_streaming" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Logs Streaming Using AWS Kinesis</h3>
-                <p>Developed a real-time log streaming solution using Amazon Kinesis Data Streams and Firehose. Simulated log generation in a Dockerized environment with a scalable architecture for efficient processing.</p>
-                <a href="https://github.com/Lashmanbala/logs_streaming_using_kinesis" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Developed a real-time log streaming solution using Amazon Kinesis Data Streams and Firehose to capture and store logs in S3.</li>
+                    <li>Simulated log generation with a Python script in a Dockerized environment, using Kinesis Agent for ingestion.</li>
+                    <li>Designed a scalable, containerized architecture for efficient log processing and storage.</li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/logs_streaming_using_kinesis" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Github Data ETL Pipeline Using AWS Glue</h3>
-                <p>Built a serverless data pipeline using AWS Glue to process GitHub activity data. Cleaned, partitioned, and stored data as Parquet files with efficient analysis using Athena.</p>
-                <a href="https://github.com/Lashmanbala/aws_glue_etl" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Built a serverless data pipeline to process GitHub activity data using AWS Glue and S3.</li>
+                    <li>Implemented a Glue workflow with an ETL job to clean, partition, and store data as Parquet files, followed by a crawler to update the Data Catalog. </li>
+                    <li>Queried the processed data using Athena for efficient analysis, with IAM ensuring secure access.</li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/aws_glue_etl" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Data Migration Project</h3>
-                <p>Implemented a data migration from MySQL to PostgreSQL using a Python application in Docker. Orchestrated with Airflow for seamless, automated migrations.</p>
-                <a href="https://github.com/Lashmanbala/data_migration_project" target="_blank">View on GitHub</a>
+                <ul>
+                    <li>Implemented a scalable data migration project from MySQL to PostgreSQL using a custom Python application, containerized with Docker. </li>
+                    <li>Orchestrated the migration process with Apache Airflow, running in a Dockerized environment with PostgreSQL as the backend. </li>
+                    <li>Demonstrated the end-to-end migration workflow with both databases hosted in Docker containers.</li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/data_migration_project" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>NYSE Data ETL Pipeline Using Hive</h3>
-                <p>Developed an ETL pipeline for NYSE financial data using Hive and HDFS. Automated ingestion and transformation with scheduled execution on AWS EMR.</p>
+                <ul>
+                    <li>Developed an ETL pipeline to process NYSE financial data using Hive, storing it as partitioned Parquet files in HDFS. </li>
+                    <li>Automated data ingestion with a Python script, Hive queries for transformation, and a shell script triggered via cron for scheduled execution.</li>
+                    <li>Deployed on AWS EMR, ensuring efficient and scalable data processing.</li>
+                    </ul> 
                 <a href="https://github.com/Lashmanbala/hive_etl" target="_blank">View on GitHub</a>
             </div>
         </div>
