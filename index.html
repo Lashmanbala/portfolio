@@ -249,6 +249,15 @@
                   <a href="https://github.com/Lashmanbala/aws_lambda_emr_pipeline" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
+                <h3>Cashback Streaming Project Using Kafka and Spark streaming</h3>
+                <ul>
+                    <li>Built a real-time cashback streaming pipeline using Kafka and Spark Structured Streaming to process financial transactions.</li>
+                    <li>Configured Kafka and Spark in Docker, with eligible cashback details sent to a Kafka topic and PostgreSQL, and malformed records logged for reprocessing.</li>
+                    <li>Implemented fault tolerance by handling database unavailability with Parquet-based data backups. </li>
+                  </ul>
+                  <a href="https://github.com/Lashmanbala/kafka_spark_streaming" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
                 <h3>Redshift DataWarehouse Solution for Retail Data Analytics</h3>
                 <ul>
                     <li>Designed and implemented a Redshift data warehouse solution for retail analytics, integrating data from S3, RDS MySQL, and Redshift-managed tables.</li>
@@ -267,27 +276,18 @@
                   <a href="https://github.com/Lashmanbala/dbt_databricks" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
-                <h3>Cashback Streaming Project Using Kafka and Spark streaming</h3>
-                <ul>
-                    <li>Built a real-time cashback streaming pipeline using Kafka and Spark Structured Streaming to process financial transactions.</li>
-                    <li>Configured Kafka and Spark in Docker, with eligible cashback details sent to a Kafka topic and PostgreSQL, and malformed records logged for reprocessing.</li>
-                    <li>Implemented fault tolerance by handling database unavailability with Parquet-based data backups. </li>
-                  </ul>
-                  <a href="https://github.com/Lashmanbala/kafka_spark_streaming" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
                 <h3>Logs Streaming Using AWS Kinesis</h3>
                 <ul>
-                    <li>Developed a real-time log streaming solution using Amazon Kinesis Data Streams and Firehose to capture and store logs in S3.</li>
-                    <li>Simulated log generation with a Python script in a Dockerized environment, using Kinesis Agent for ingestion.</li>
-                    <li>Designed a scalable, containerized architecture for efficient log processing and storage.</li>
+                    <li>Developed a real-time log streaming pipeline using Amazon Kinesis Data Firehose to deliver logs to Amazon S3 with file path partitioning in s3.</li>
+                    <li>Simulated continuous log generation using a Python script within a Dockerized environment to test end-to-end data flow.</li>
+                    <li>Configured and deployed the Kinesis Agent to capture application logs and stream them to the Firehose delivery stream.</li>
                   </ul>
                   <a href="https://github.com/Lashmanbala/logs_streaming_using_kinesis" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Github Data ETL Pipeline Using AWS Glue</h3>
                 <ul>
-                    <li>Built a serverless data pipeline to process GitHub activity data using AWS Glue and S3.</li>
+                    <li>Built a serverless data pipeline to process GitHub activity data using AWS Glue and S3 and AWS Lambda.</li>
                     <li>Implemented a Glue workflow with an ETL job to clean, partition, and store data as Parquet files, followed by a crawler to update the Data Catalog. </li>
                     <li>Queried the processed data using Athena for efficient analysis, with IAM ensuring secure access.</li>
                   </ul>
