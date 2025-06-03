@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lashmanbala | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
+
     <style>
             body { margin: 0; font-family: 'Segoe UI', sans-serif; }
     
@@ -33,7 +38,10 @@
             nav { 
                 background: linear-gradient(135deg, #88d3ce, #6e45e2); 
                 display: flex; 
-                justify-content: center; 
+                justify-content: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000; /* ensures it stays above other content */ 
             }
             
             nav a { 
@@ -96,6 +104,12 @@
             
             .project-card h3 { 
                 margin: 0 0 0.5em; 
+            }
+            
+            .project-card:hover {
+                box-shadow: 0 0 12px rgba(0,0,0,0.15);
+                transform: translateY(-3px);
+                transition: all 0.3s ease;
             }
             
             footer { 
@@ -191,6 +205,8 @@
         <a href="#projects">Projects</a>
         <a href="#blogs">Blogs</a>
         <a href="#contact">Contact</a>
+        <a href="https://drive.google.com/file/d/1YGQGI1pNsmtDCVkj1g_XqifHn-yeynAk/view?usp=drive_link" target="_blank"> Resume </a>
+          
     </nav>
 
     <section id="about">
@@ -393,8 +409,5 @@
         </div>
     </section>
 
-    <footer>
-        &copy; 2025 Lashmanbala Portfolio
-    </footer>
 </body>
 </html>
