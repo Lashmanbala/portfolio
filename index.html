@@ -203,9 +203,16 @@
                 text-decoration: underline; /* Adds underline on hover */
             }
             .blogs-list {
-                columns: 2;
+                columns: 1; /* default for mobile */
                 column-gap: 30px;
             }
+
+            @media (min-width: 768px) {
+                .blogs-list {
+                    columns: 2; /* 2 columns only for tablets/desktops */
+                }
+            }
+
 
 
     </style>
