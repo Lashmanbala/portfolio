@@ -20,13 +20,13 @@
     <style>
             body { margin: 0; font-family: 'Segoe UI', sans-serif; }
     
-            header { 
-                 background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            /* header { 
+                 background: linear-gradient(135deg, #6e45e2,  #6e45e2);
                  color: #ffffff;
                  text-align: center;
                  padding: 0.1em 1em;
                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                 font-size: 1.5em;
+                 font-size: 1.0em;
                  position: relative;
              }
 
@@ -43,15 +43,15 @@
             }
 
             nav { 
-                background: linear-gradient(135deg, #88d3ce, #6e45e2); 
+                background: linear-gradient(135deg, #6e45e2, #6e45e2); 
                 display: flex; 
                 justify-content: center;
                 position: sticky;
                 top: 0;
                 z-index: 1000; /* ensures it stays above other content */ 
-            }
+            /* } */
             
-            nav a { 
+            /* nav a { 
                 color: #fff; 
                 text-decoration: none; 
                 padding: 1em; 
@@ -59,6 +59,52 @@
             
             nav a:hover { 
                 background: #555; 
+            } */
+              /* Header + Nav */
+            header {
+                background: #6e45e2;
+                color: #fff;
+                padding: 0.6em 1em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                /* padding: 1em 2em; */
+                box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            .logo {
+                display: flex;
+                flex-direction: column; /* stack title + subtitle */
+                align-items: flex-start;
+            }
+            header h1 {
+                font-size: clamp(1.8rem, 3vw, 2.8rem); 
+                font-weight: 600;
+                margin: 0;
+                white-space: nowrap;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 1.5em;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.2s ease;
+            }
+            nav a:hover {
+                color: #ffdd57;
+            }
+            .subtitle {
+                font-size: 1.0rem;
+                font-weight: 700;
+                color: #e0e0e0; /* lighter shade */
+                margin-top: 2px;
             }
             
             /* section { 
@@ -245,24 +291,24 @@
             border-radius: 10px;
         }
 
-
     </style>
 </head>
 <body>
     <header>
-        <!-- <img src="Profile Photo.png" alt="Lashmanbala" class="profile-photo"> -->
-        <h1>LashmanBala</h1>
-        <p>AWS Data Engineer</p>
+        <div class="logo">
+            <h1>Lashmanbala</h1>
+            <p class="subtitle">AWS Data Engineer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1HrjPD6fNlo8Xgk5WJ7jwCvhIJxjPJq7H/view?usp=sharing" target="_blank"> Resume </a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <!-- <a href="#about">About</a> -->
-        <a href="#projects">Projects</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#contact">Contact</a>
-        <a href="https://drive.google.com/file/d/1HrjPD6fNlo8Xgk5WJ7jwCvhIJxjPJq7H/view?usp=sharing" target="_blank"> Resume </a>
-          
-    </nav>
 
     <section id="about">
         <h2>About Me</h2>
