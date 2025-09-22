@@ -102,17 +102,31 @@
             nav a:hover {
                 color: #ffdd57;
             }
-            /* --- Mobile responsive --- */
+            .menu-toggle {
+                display: none;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+            /* Responsive for mobile */
             @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;   /* stack links vertically */
-                align-items: center;
-                gap: 1em;
-            }
+                nav ul {
+                    display: none;          /* hide links by default */
+                    flex-direction: column; /* stack vertically */
+                    background: #6e45e2;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    padding: 1em 0;
+                }
 
-            nav {
-                padding: 1em 0;
-            }
+                nav.active ul {
+                    display: flex;          /* show when hamburger clicked */
+                }
+
+                .menu-toggle {
+                    display: block;         /* show hamburger icon */
+                }
             }
             .subtitle {
                 font-size: 1.0rem;
@@ -313,6 +327,7 @@
             <h1>Lashmanbala</h1>
             <p class="subtitle">AWS Data Engineer</p>
         </div>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
         <nav>
             <ul>
                 <li><a href="#projects">Projects</a></li>
@@ -526,6 +541,16 @@
             <a href="https://github.com/Lashmanbala" target="_blank" class="contact-tile"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </section>
+
+    <script>
+        // Your JavaScript code goes here
+        const menuToggle = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
